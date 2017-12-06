@@ -1,9 +1,9 @@
 # Site settings
 title: MetogeFun Blog  
-SEOTitle: 王召辉的博客 | wangzhaohui Blog
+SEOTitle: 王召辉的博客 | wangzhaohui Blog | metogefun | METOGEFUN
 header-img: img/post-bg-rwd.jpg
 email: metogefun@gmail.com
-description: "王召辉的博客, wangzhaohui, 王召辉,tomcat,java ,spring ,linux "
+description: "王召辉的博客, wangzhaohui, 王召辉 "
 keyword: "鲁龙基的博客, lulongji, 鲁龙基,tomcat,java ,spring ,linux "
 url: "http://metogefun.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
