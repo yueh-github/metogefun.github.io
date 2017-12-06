@@ -12,7 +12,7 @@ github_repo: "https://github.com/metogefun/metogefun.github.io.git" # you code r
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "我曾七次鄙视我的灵魂!"
-sidebar-avatar: /img/about-LULONGJI-gentle.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/night.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
@@ -75,7 +75,7 @@ gitment_client_secret : 1d744823825939eda3beb9360bb46ed4010b8eb6
 
 # Analytics settings
 # Baidu Analytics
-ba_track_id: b91b6efc678be9f6b3863953cae325c6
+ba_track_id: 35df2910988f3ac3b6282457c46b775c
 
 # Google Analytics
 ga_track_id: 'UA-107851854-1'            # Format: UA-xxxxxx-xx
