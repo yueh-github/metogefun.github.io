@@ -1,6 +1,7 @@
 ---
 title: ES Basic Concepts
 layout: post
+author: 王召辉
 tags:
   - elasticsearch
 ---

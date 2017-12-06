@@ -2,6 +2,7 @@
 title: AMQP 0-9-1模型解释
 layout: post
 guid: urn:uuid:de8d598d-6f35-4c7b-ab23-1951062dadfc
+author: 王召辉
 tags:
   - rabbitmq 
   - amqp 

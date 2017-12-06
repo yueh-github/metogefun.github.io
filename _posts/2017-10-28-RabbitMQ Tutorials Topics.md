@@ -1,6 +1,7 @@
 ---
 title: RabbitMQ Tutorials [5] Topics
 layout: post
+author: 王召辉
 tags:
   - rabbitmq
   - 翻译
@@ -61,7 +62,72 @@ topic交换功能强大可以表现的跟其他交换一样。
 我们将在日志系统中使用``topic``交换。我们从一个工作假设开始，假设日志的routing key会有两个词： "<facility>.<severity>".
 
 ``` java
-import com.rabbitmq.client.*;import java.io.IOException;public class EmitLogTopic {    private static final String EXCHANGE_NAME = "topic_logs";    public static void main(String[] argv)                  throws Exception {        ConnectionFactory factory = new ConnectionFactory();        factory.setHost("localhost");        Connection connection = factory.newConnection();        Channel channel = connection.createChannel();        channel.exchangeDeclare(EXCHANGE_NAME, "topic");        String routingKey = getRouting(argv);        String message = getMessage(argv);        channel.basicPublish(EXCHANGE_NAME, routingKey, null, message.getBytes());        System.out.println(" [x] Sent '" + routingKey + "':'" + message + "'");        connection.close();    }    //...}
+import com.rabbitmq.client.*;
 
-import com.rabbitmq.client.*;import java.io.IOException;public class ReceiveLogsTopic {  private static final String EXCHANGE_NAME = "topic_logs";  public static void main(String[] argv) throws Exception {    ConnectionFactory factory = new ConnectionFactory();    factory.setHost("localhost");    Connection connection = factory.newConnection();    Channel channel = connection.createChannel();    channel.exchangeDeclare(EXCHANGE_NAME, "topic");    String queueName = channel.queueDeclare().getQueue();    if (argv.length < 1) {      System.err.println("Usage: ReceiveLogsTopic [binding_key]...");      System.exit(1);    }    for (String bindingKey : argv) {      channel.queueBind(queueName, EXCHANGE_NAME, bindingKey);    }    System.out.println(" [*] Waiting for messages. To exit press CTRL+C");    Consumer consumer = new DefaultConsumer(channel) {      @Override      public void handleDelivery(String consumerTag, Envelope envelope,                                 AMQP.BasicProperties properties, byte[] body) throws IOException {        String message = new String(body, "UTF-8");        System.out.println(" [x] Received '" + envelope.getRoutingKey() + "':'" + message + "'");      }    };    channel.basicConsume(queueName, true, consumer);  }}
+import java.io.IOException;
+
+public class EmitLogTopic {
+
+    private static final String EXCHANGE_NAME = "topic_logs";
+
+    public static void main(String[] argv)
+                  throws Exception {
+
+        ConnectionFactory factory = new ConnectionFactory();
+        factory.setHost("localhost");
+        Connection connection = factory.newConnection();
+        Channel channel = connection.createChannel();
+
+        channel.exchangeDeclare(EXCHANGE_NAME, "topic");
+
+        String routingKey = getRouting(argv);
+        String message = getMessage(argv);
+
+        channel.basicPublish(EXCHANGE_NAME, routingKey, null, message.getBytes());
+        System.out.println(" [x] Sent '" + routingKey + "':'" + message + "'");
+
+        connection.close();
+    }
+    //...
+}
+
+import com.rabbitmq.client.*;
+
+import java.io.IOException;
+
+public class ReceiveLogsTopic {
+  private static final String EXCHANGE_NAME = "topic_logs";
+
+  public static void main(String[] argv) throws Exception {
+    ConnectionFactory factory = new ConnectionFactory();
+    factory.setHost("localhost");
+    Connection connection = factory.newConnection();
+    Channel channel = connection.createChannel();
+
+    channel.exchangeDeclare(EXCHANGE_NAME, "topic");
+    String queueName = channel.queueDeclare().getQueue();
+
+    if (argv.length < 1) {
+      System.err.println("Usage: ReceiveLogsTopic [binding_key]...");
+      System.exit(1);
+    }
+
+    for (String bindingKey : argv) {
+      channel.queueBind(queueName, EXCHANGE_NAME, bindingKey);
+    }
+
+    System.out.println(" [*] Waiting for messages. To exit press CTRL+C");
+
+    Consumer consumer = new DefaultConsumer(channel) {
+      @Override
+      public void handleDelivery(String consumerTag, Envelope envelope,
+                                 AMQP.BasicProperties properties, byte[] body) throws IOException {
+        String message = new String(body, "UTF-8");
+        System.out.println(" [x] Received '" + envelope.getRoutingKey() + "':'" + message + "'");
+      }
+    };
+    channel.basicConsume(queueName, true, consumer);
+  }
+}
+
 ```

@@ -1,6 +1,7 @@
 ---
 title: RabbitMQ Tutorials [4] Routing
 layout: post
+author: 王召辉
 tags:
   - rabbitmq
   - 翻译

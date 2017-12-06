@@ -1,6 +1,7 @@
 ---
 title: RabbitMQ Tutorials [3] Publish/Subscribe
 layout: post
+author: 王召辉
 tags:
   - rabbitmq
   - 翻译
