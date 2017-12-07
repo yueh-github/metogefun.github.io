@@ -17,4 +17,4 @@ java.lang.IllegalArgumentException: Invalid character found in the request targe
 
 !(way)[../imgs/tomcat/400-bad-request.jpg]
 
-先果断降版本，继续测试
+果断降版本，继续测试
