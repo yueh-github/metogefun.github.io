@@ -2,6 +2,7 @@
 title: Maven 依赖
 layout: post
 author: 王召辉
+catalog: true
 tags:
   - maven
 ---

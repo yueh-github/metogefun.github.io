@@ -2,6 +2,7 @@
 title: Redis异常汇总
 layout: post
 author: 王召辉
+catalog: true
 tags: 
  - redis
 ---

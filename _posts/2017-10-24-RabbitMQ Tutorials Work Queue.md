@@ -2,6 +2,7 @@
 title: RabbitMQ Tutorials [2] Work Queue
 layout: post
 author: 王召辉
+catalog: true
 tags:
   - rabbitmq
   - 翻译

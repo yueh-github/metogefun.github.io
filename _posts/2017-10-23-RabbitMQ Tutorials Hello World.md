@@ -2,6 +2,7 @@
 title: RabbitMQ Tutorials [1] Hello World
 layout: post
 author: 王召辉
+catalog: true
 tags:
   - rabbitmq
   - 翻译

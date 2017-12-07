@@ -2,6 +2,7 @@
 title:  CentOS 7下配置Redis开机启动
 layout: post
 author: 王召辉
+catalog: true
 tags:
  - redis
  - centos
