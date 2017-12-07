@@ -15,6 +15,6 @@ java.lang.IllegalArgumentException: Invalid character found in the request targe
 
 尝试各种解决方案未果，后在[stackoverflow](https://stackoverflow.com/)上找到对应的方案。
 
-!(way)[../imgs/tomcat/400-bad-request.jpg]
+!(way)[{{ site.url }}/imgs/tomcat/400-bad-request.jpg]
 
 果断降版本，继续测试
