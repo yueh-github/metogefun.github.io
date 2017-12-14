@@ -4,10 +4,11 @@ layout: post
 author: 王召辉
 catalog: true
 tags: 
- - spring\ boot spring\ cloud
+ - spring boot 
+ - spring cloud
 ---
 
-spring cloud maven的配置有两种方式，第一种是官网提供的配置，项目的pom文件继承spring-boot、并且在dependencyManager添加spring cloud依赖，这种方式的一个弊端就是我们使用maven的继承，如果我们的项目有自己的parent pom，这种方式就存在问题了。因此我们可以使用另一种方式，先看下两种配置方式。
+spring cloud maven的配置有两种方式，第一种是官网提供的配置，项目的pom文件继承spring-boot、并且在dependencyManager添加spring cloud依赖，这种方式的使用了maven的继承，如果我们的项目有自己的parent pom，就出现问题了。因此我们可以使用另一种方式，先看下两种配置方式：
 
 第一种方式
 ```
@@ -19,15 +20,15 @@ spring cloud maven的配置有两种方式，第一种是官网提供的配置�
 </parent>
 
 <dependencyManagement>
-	<dependencies>
-		<dependency>
-			<groupId>org.springframework.cloud</groupId>
-			<artifactId>spring-cloud-dependencies</artifactId>
-			<version>Brixton.RELEASE</version>
-			<type>pom</type>
-			<scope>import</scope>
-		</dependency>
-	</dependencies>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-dependencies</artifactId>
+            <version>Brixton.RELEASE</version>
+            <type>pom</type>
+            <scope>import</scope>
+        </dependency>
+    </dependencies>
 </dependencyManagement>
 
 <dependencies>
