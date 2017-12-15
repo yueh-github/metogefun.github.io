@@ -7,7 +7,7 @@ tags:
  - nexus
 ---
 
-如果想要上传非maven管理的jar到nexus 3，语法如下：
+今天碰到需要上传非maven管理的jar到nexus，记录下。语法如下：
 
 ```
 mvn deploy:deploy-file 
