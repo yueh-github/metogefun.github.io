@@ -12,7 +12,7 @@ github_repo: "https://github.com/yueh-github/yuehao.github.io.git" # you code re
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
 sidebar-about-description: "要写博客怎么说"
-sidebar-avatar: /img/night.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
+sidebar-avatar: /img/xiaomumu.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
 
