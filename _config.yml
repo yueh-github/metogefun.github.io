@@ -1,17 +1,17 @@
 # Site settings
-title: Wangzhaohui's Blog
-SEOTitle: 王召辉的博客 | wangzhaohui Blog | metogefun | METOGEFUN
+title: Yuehao's Blog
+SEOTitle: 岳浩的博客 | yuehao Blog | 岳浩 | YueHao
 header-img: img/post-bg-coffee.jpeg
-email: metogefun@gmail.com
-description: "王召辉的博客, wangzhaohui, 王召辉 "
-keyword: "王召辉的博客, wangzhaohui, 王召辉,java ,spring ,linux, redis, mysql, microservice "
-url: "http://metogefun.github.io"          # your host, for absolute URL
+email: 83541408@qq.com
+description: "岳浩的博客, yuehao, 岳浩 "
+keyword: "岳浩的博客, yuehao, 岳浩,java ,spring ,linux, redis, mysql, 架构 "
+url: "http://yuehao.github.io"          # your host, for absolute URL
 baseurl: ""      # for example, '/blog' if your blog hosted on 'host/blog'
-github_repo: "https://github.com/metogefun/metogefun.github.io.git" # you code repository
+github_repo: "https://github.com/yueh-github/yuehao.github.io.git" # you code repository
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "我曾七次鄙视我的灵魂!"
+sidebar-about-description: "要写博客怎么说"
 sidebar-avatar: /img/night.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -20,7 +20,7 @@ sidebar-avatar: /img/night.jpg      # use absolute URL, seeing it's used in both
 RSS: false
 # weibo_username:     lulongji
 zhihu_username:     meng-xing-shi-fen-28-63
-github_username:    metogefun
+github_username:    yuehao
 #facebook_username:  baiying.qiu.7
 #jianshu_username:   e71990ada2fd
 #twitter_username:   lulongji
@@ -58,7 +58,7 @@ kramdown:
 # Disqus settings（https://disqus.com/）
 #disqus_username: lulongji
 
-gitment_username : metogefun
+gitment_username : yuehao
 gitment_id : 8446572
 gitment_repo : metogefun.github.io
 gitment_client_id : f7731568507c3b43ed2f
