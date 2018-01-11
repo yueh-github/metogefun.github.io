@@ -1,5 +1,5 @@
 # Site settings
-title: Yuehao's Blog
+title: 岳浩的博客
 SEOTitle: 岳浩的博客 | yuehao Blog | 岳浩 | YueHao
 header-img: img/post-bg-coffee.jpeg
 email: 83541408@qq.com
@@ -11,7 +11,7 @@ github_repo: "https://github.com/yueh-github/yuehao.github.io.git" # you code re
 
 # Sidebar settings
 sidebar: true                           # whether or not using Sidebar.
-sidebar-about-description: "要写博客怎么说"
+sidebar-about-description: "Java技术栈专注互联网领域"
 sidebar-avatar: /img/xiaomumu.jpg      # use absolute URL, seeing it's used in both `/` and `/about/`
 
 
@@ -86,7 +86,7 @@ ga_domain: auto
 
 
 # Featured Tags
-featured-tags: true                     # 是否使用首页标签
+featured-tags: false                     # 是否使用首页标签
 featured-condition-size: 0              # 相同标签数量大于这个数，才会出现在首页
 
 
@@ -108,8 +108,5 @@ friends: [
     },{
         title: "码云",
         href: "https://gitee.com/"
-    },{
-        title: "lulongji",
-        href: "https://lulongji.github.io/"
     }
 ]
