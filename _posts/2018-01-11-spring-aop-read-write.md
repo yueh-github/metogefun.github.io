@@ -3,7 +3,7 @@ title: 基于Spring aop技术来实现java内部的读写分离
 layout: post
 author: 岳浩
 catalog: true
-data:2018-01-10 13:00:00
+data:2018-01-09 13:00:00
 tags: 
  - java mysql spring 
 ---
