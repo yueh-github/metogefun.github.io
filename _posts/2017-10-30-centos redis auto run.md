@@ -1,4 +1,4 @@
----
+````---
 title:  CentOS 7下配置Redis开机启动
 layout: post
 author: 王召辉
@@ -91,4 +91,4 @@ chkconfig redis on
 #description:auto_run
 ```
 
-这样就完成了，redis的配置，可以``reboot``，试试我们的服务有没有自动启动。
+这样就完成了，redis的配置，可以``reboot``，试试我们的服务有没有自动启动。````

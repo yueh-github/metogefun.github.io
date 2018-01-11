@@ -1,4 +1,4 @@
----
+````---
 title: spring boot调度任务cron表达式使用yml配置
 layout: post
 author: 王召辉
@@ -53,4 +53,4 @@ public class MySchedule {
 }
 ```
 
-感觉是麻烦了一些😆，也可以使用properties、yml结合的方式。
+感觉是麻烦了一些😆，也可以使用properties、yml结合的方式。````

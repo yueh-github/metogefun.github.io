@@ -1,4 +1,4 @@
----
+````---
 title: RabbitMQ Tutorials [1] Hello World
 layout: post
 author: 王召辉
@@ -149,3 +149,4 @@ public class Recv {
 我们将告诉服务器将消息从队列中传递给我们。因为它将异步地推送我们的消息，所以我们提供了一个回调，以一个对象的形式来缓冲消息，直到我们准备好使用它们为止。这就是``DefaultConsumer``要做的。
 
 
+````

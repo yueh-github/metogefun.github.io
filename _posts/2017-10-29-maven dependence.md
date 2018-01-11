@@ -1,4 +1,4 @@
----
+````---
 title: Maven 依赖
 layout: post
 author: 王召辉
@@ -64,4 +64,4 @@ maven的依赖范围可以通过__scope__来指定，在使用过程中很少指
 
 ## 依赖优化
 
-可以使用``mvn denpendency:list``来查看项目中所有依赖。如果你想知道你第一直接依赖，以及后面的传递性依赖等兴义可以用过``mvn denpendency:tree``命令。你可以使用``mvn dependency:analyze``可以查看使用到的和未使用到的依赖信息。
+可以使用``mvn denpendency:list``来查看项目中所有依赖。如果你想知道你第一直接依赖，以及后面的传递性依赖等兴义可以用过``mvn denpendency:tree``命令。你可以使用``mvn dependency:analyze``可以查看使用到的和未使用到的依赖信息。````

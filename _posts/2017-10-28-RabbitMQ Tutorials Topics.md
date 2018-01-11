@@ -1,4 +1,4 @@
----
+````---
 title: RabbitMQ Tutorials [5] Topics
 layout: post
 author: 王召辉
@@ -131,4 +131,4 @@ public class ReceiveLogsTopic {
   }
 }
 
-```
+```````

@@ -1,4 +1,4 @@
----
+````---
 title: RabbitMQ Tutorials [2] Work Queue
 layout: post
 author: 王召辉
@@ -130,3 +130,4 @@ channel.basicQos(prefetchCount);
 ```
 
 使用消息答复和prefetchCount你可以设置一个工作队列。持久性选项可以让任务存活下来即使RabbitMQ重启。
+````

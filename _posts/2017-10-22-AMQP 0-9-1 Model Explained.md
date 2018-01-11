@@ -1,4 +1,4 @@
----
+```---
 title: AMQP 0-9-1模型解释
 layout: post
 guid: urn:uuid:de8d598d-6f35-4c7b-ab23-1951062dadfc
@@ -286,3 +286,4 @@ AMQP 0-9-1有几个扩展点:
 * 可以使用[扩展的插件](https://www.rabbitmq.com/plugins.html)扩展代理，例如，[RabbitMQ管理](https://www.rabbitmq.com/management.html)前端和HTTP API是作为一个插件实现的。
 
 这些特性使AMQP 0-9-1模型更加灵活，适用于非常广泛的问题。
+```

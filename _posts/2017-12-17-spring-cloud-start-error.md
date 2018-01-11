@@ -1,4 +1,4 @@
----
+````---
 title: spring cloud config server启动异常
 layout: post
 author: 王召辉
@@ -227,4 +227,4 @@ Caused by: java.lang.AbstractMethodError: org.springframework.validation.beanval
 
 WTF
 
-竟然启动成功了。。。
+竟然启动成功了。。。````

@@ -1,4 +1,4 @@
----
+````---
 title: nexus 3.x 上传本地jar
 layout: post
 author: 王召辉
@@ -32,4 +32,4 @@ mvn deploy:deploy-file
     -Durl=http://localhost:8081/repository/maven-releases/
 ```
 
-DrepositoryId=nexus指的是setting配置的验证的id
+DrepositoryId=nexus指的是setting配置的验证的id````

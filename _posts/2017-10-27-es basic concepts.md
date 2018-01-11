@@ -1,4 +1,4 @@
----
+````---
 title: ES Basic Concepts
 layout: post
 author: 王召辉
@@ -62,4 +62,4 @@ ES是一个近实时搜索平台。这意味着，从索引文档到可搜索的
 
 ```
 每一个ES shard 都是一个lucene index。在一个Lucene索引中，您可以拥有最多的文档数量。lucene-5843限制是2,147,483,519 (= Integer.MAX_VALUE - 128)个文档。你可以通过_cat/shards api来监控。
-```
+```````

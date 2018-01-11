@@ -1,4 +1,4 @@
----
+````---
 title: spring cloud maven 配置
 layout: post
 author: 王召辉
@@ -111,4 +111,4 @@ spring cloud maven的配置有两种方式，第一种是官网提供的配置�
         </plugin>
     </plugins>
 </build>
-```
+```````
