@@ -22,7 +22,7 @@ aop拦截service层的访问，获取到service调用的方法名，根据方法
 第一步：定义动态数据源，简单的来解释就是determineCurrentLookupKey会根据key来返回你需要的数据源，afterPropertiesSet的作用是初始化读库，如果有多个读库
 
 我们要自己来实现负载均衡算法，不能所有请求都落到一个从库，要负载均衡的落到每个读库，这样才起到多从的效果。
-``` Java
+``` java
 /**
  * 定义动态数据源，实现通过集成Spring提供的AbstractRoutingDataSource，只需要实现determineCurrentLookupKey方法即可
  * <p>
@@ -100,7 +100,7 @@ public class DynamicDataSource extends AbstractRoutingDataSource {
 
 
 第二步：使用ThreadLocal技术来记录当前线程中的数据源的key,保证请求的key是线程安全的
-``` Java
+``` java
 /**
  * 使用ThreadLocal技术来记录当前线程中的数据源的key
  * Created by yuehao on 2018/1/10.
@@ -198,7 +198,7 @@ public class DataSourceAspect {
 ```
 
 第四步：配置spring文件,自己读一下，注释很清楚
-``` spel
+``` java
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
