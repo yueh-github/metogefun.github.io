@@ -198,7 +198,7 @@ public class DataSourceAspect {
 ```
 
 第四步：配置spring文件,自己读一下，注释很清楚
-``` java
+``` spel
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
