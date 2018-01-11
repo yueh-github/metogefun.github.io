@@ -72,3 +72,7 @@ Slave_SQL_Running_State: Slave has read all relay log; waiting for more updates
 测试一下吧，如果你的change master to落后主库，或者是配置的有问题
 可以通过下面的命令来进行修改master to的配置，记住MASTER_LOG_FILE一定要去master 去查，并且要在查之前执行flush logs;才会拿到最新的日志名和读取下标
 CHANGE MASTER TO MASTER_LOG_FILE='master-bin.000006',MASTER_LOG_POS=154;
+
+
+关注公众号获取更多干货文章
+<img src="/img/weixin/qrcode_jishujiagou.jpg" width="100" height="100" alt="AltText" />
